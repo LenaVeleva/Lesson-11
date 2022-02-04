@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    outline: none;
+}
+* {
+    box-sizing: border-box;
+}
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.list-item {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 16px;
+    position: relative;
+}
+.list-item:hover .sub-list {
+    display: block;
+}
+.list-link {
+    text-decoration: none;
+    display: block;
+    padding: 15px 40px;
+    background-color: black;
+    color: white;
+    text-transform: uppercase;   
+}
+.list-link:focus {
+    box-shadow: 0px 0px 4px 5px silver;
+}
+.list-item:hover .list-link {
+    background-color: silver;
+}
+.sub-list-link {
+    text-decoration: none;
+    display: block;
+    color: white;
+    background-color: blue;
+    padding: 7px 20px;
+    font-size: 14px;
+    width: 200px;
+}
+.sub-list-link:focus {
+    box-shadow: 0px 0px 2px 3px blue;
+}
+.sub-list-link:hover {
+    background-color: rgba(13, 153, 253, 0.945);
+}
+.sub-list {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    display: none;
+}
+.sub-list-item {
+    position: relative;
+}
+.sub-list-item:hover .sub-list-action {
+    display: block;
+}
+.sub-list-link-action {
+    text-decoration: none;
+    display: block;
+    color: rgba(255, 255, 255, 0.904);
+    background-color: blue;
+    padding: 10px 23px;
+    font-size: 13px;
+    width: 150px;
+}
+.sub-list-link-action:focus {
+    box-shadow: 0px 0px 2px 3px red;
+}
+.sub-list-link-action:hover {
+    background-color: rgba(13, 153, 253, 0.945);
+}
+.sub-list-action {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    display: none;
+}
